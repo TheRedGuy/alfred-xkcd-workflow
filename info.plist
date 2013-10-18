@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.romanroibu.alfredworkflows.xkcd</string>
+	<key>connections</key>
+	<dict>
+		<key>32926F78-4020-42F7-97E9-947C757E24CC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>83501AA9-620B-4259-A9E0-45E678CD180B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Roman Roibu</string>
+	<key>description</key>
+	<string>A simple workflow to preview the latest xkcd comic.</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>xkcd</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>xkcd</string>
+				<key>subtext</key>
+				<string>Show the lastest xkcd comic</string>
+				<key>text</key>
+				<string>xkcd</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>32926F78-4020-42F7-97E9-947C757E24CC</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>/usr/bin/ruby xkcd.rb {query}</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>83501AA9-620B-4259-A9E0-45E678CD180B</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>http://xkcd.com</string>
+	<key>uidata</key>
+	<dict>
+		<key>32926F78-4020-42F7-97E9-947C757E24CC</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>83501AA9-620B-4259-A9E0-45E678CD180B</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>https://github.com/TheRedGuy/alfred-workflows</string>
+</dict>
+</plist>
